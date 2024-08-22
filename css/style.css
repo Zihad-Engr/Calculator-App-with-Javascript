@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+   width: 100vw;
+}
+
+
+h1{
+    text-align:center;
+}
+
+
+#cal-btn{
+    list-style:none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color:#000;
+    direction:rtl;
+}
+#cal-btn li{
+ text-align:center;
+ border:.2px solid rgba(255,255,255,0.2);
+ color:#fff;
+ font-size:30px;
+ padding:10px;
+ font-weight:bold;
+ cursor:pointer;
+ transition:.5s;
+}
+#cal-btn li:hover{
+ border:.2px solid rgba(255,255,255,0.2);
+ color:#000;
+background-color:aqua
+}
+
+textarea{
+    width:100%;
+    resize: none;
+    padding:25px 0px;
+    font-size:25px;
+    font-weight: 600;
+
+}
+
