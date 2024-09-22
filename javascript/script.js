@@ -11,15 +11,19 @@ let allselector=maindiv.children;
 for(let i=0;i<allselector.length;i++){
     if(allselector[i]==clrbt){
         clrbt.addEventListener('click',()=>{
-            InpData=""
+            Inp.innerHTML=""
     })
     }
 
     else if(allselector[i]==Equal){
-        let getResult=InpData;
-        let mkresult=eval(getResult);
-        InpData = mkresult;
-    }
+        Equal.addEventListener('click',()=>{
+
+            let mkresult=eval(Inp.innerHTML);
+            if(mkresult!=undefined && mkresult!=null){
+                Inp.innerHTML = mkresult;
+            }
+        })}
+    
 
     else{
         
